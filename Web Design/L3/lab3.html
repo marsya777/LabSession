@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width" initial-scale="1.0">
+        <title>Inline Calculator</title>
+    </head>
+
+    <header>
+        <div>
+            <h1>Inline Calculator</h1>
+            <span>Simple contact form of an inline calculator to enhance user interactivity</span>
+        </div><br>
+        <a href="#home">Homepage</a> &nbsp;
+        <a href="#contact">Contact Form</a> &nbsp;
+        <a href="#calc">Inline Calculator</a>
+    </header>
+    <section>
+        <div>
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="post">
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" autofocus required><br><br>
+                <label for="cdate">Contact Date:</label><br>
+                <input type="date" id="cdate" name="contactdate"><br><br>
+                
+                <form oniput="level.value = slider.value">
+                    <label for="slider">Satisfaction Level : </label><br>
+                    1
+                    <input id="slider" name="satisfaction" type="range" min="1" max="5" step="1" value="3">
+                    5
+                    <br><br>
+                    <output name="level" for="slider"></output><br><br>
+                </form>
+                <input type="submit" name="submit">
+            </form>
+        </div>
+        
+        <div>
+            <h2>Inline Calculator</h2>
+            <form oninput="z.value=parseInt(x.value)+parseInt(y.value)">
+                <input id="x" type="number" placeholder="Enter first number"> +
+                <input id="y" type="number" placeholder="Emter second number"><br>=
+                <output name="z" for="x y"></output>
+            </form>
+        </div><br>
+    </section>
+
+    <footer>
+        <hr>
+        <div>
+            <h3>Contact Info</h3>
+            Copyright &copy; by Marsya &nbsp; <a href="tel+6012345678">Contact Me</a>  &nbsp; 
+            <a href="mailto:marsya@gmail.com">Email Me</a>
+        </div>
+    </footer>
+
+    
+
+</html>
