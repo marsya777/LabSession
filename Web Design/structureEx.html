@@ -1,0 +1,116 @@
+<!--Basic structure of an HTML-->
+<!DOCTYPE html> <!--declares this is a modern HTML-->
+<html lang="en"> <!--document written in English-->
+
+    <head> <!--hold information about the page, visitors dont see (settings, title)-->
+        <meta charset="UTF-8"> <!--makes text and symbol display correctly-->
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0"> <!--makes page work properly on phones-->
+        <title>My First Web Page</title> <!--name shown on browser tab-->
+    </head> <!--ends head section-->
+
+    <body> <!--holds everything visible on page (text,images,buttons,links)-->
+        <h1>Welcome to My First Web Page</h1> <!--main heading (largest)-->
+        <h2>This is an H2 heading</h2>
+        <h3>This is an H3 heading</h3>
+        <h4>This is an H4 heading</h4>
+        <h6>This is an H6 heading</h6> <!--smallest heading-->
+
+        <!--Paragraph and text formatting-->
+        <p>This is a paragraph of text.</p>
+        <p>This text is <strong>bold</strong> and this is <em>italic</em>.</p>
+        <p>Here is a line break:<br>This text is on a new line.</p>
+
+        <!--Lists (ordered and unordered)-->
+        <h2>My Favourite Fruits</h2>
+        <ol> <!--Numbered list-->
+            <li>Banana</li>
+            <li>Kiwi</li>
+        </ol>
+
+        <h2>My Hobbies</h2>
+        <ul> <!--Bullet points-->
+            <li>Badminton</li>
+            <li>Basketball</li>
+        </ul>
+
+        <!--Links and images-->
+        <!--Hyperlink : clickable link to another website-->
+        <p>Visit <a href="https://www.example.com" target="_blank">Example.com</a>for more information.</p>
+        <!--Insert an image : display on page-->
+        <img src="https://via.placeholder.com/150" alt="Placeholder image">
+        <!--Commenting in HTML : add comments-->
+
+        <!--Working with tables-->
+        <table border="1"> <!--adds a border to your table-->
+            <caption>Study Payment</caption> <!--Title of table-->
+
+            <thead> <!-- group of table header-->
+                <tr> <!-- 1st Table row-->
+                    <th>Name</th> <!--Table header-->
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+
+            <tbody> <!--groups of main data rows-->
+                <tr>
+                    <td>John Doe</td> <!--Table data-->
+                    <td>Mathematics</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Meon Adam</td> <!--Table data-->
+                    <td>Physics</td>
+                    <td>B+</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>RM1200</td>
+                </tr>
+            </tfoot>
+            
+        </table>
+        <br>
+        <table border="2">
+            <tr>
+                <th colspan="2">Contact Info</th> <!--a cell stretches across multiple columns-->
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>marsya@gmail.com</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td> <!--a cell stretches across multiple rows-->
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+            </tr>
+        </table>
+
+        <!--Creating forms-->
+        <!--basic form elements-->
+        <h2>Registration Forms</h2>
+        <!--action= file that receives the data-->
+        <form action="submit_form.php" method="post"> <!--sends the data hidden-->
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="firstname"><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lastname"><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </body><!--ends body section-->
+</html><!--ends the page-->
