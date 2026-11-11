@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style type="text/css">
+            h3{
+                display:block;
+                font-weight:bold;
+                color:white;
+                background-color: black;
+                width:300px;
+                text-align: center;
+                text-decoration: none;
+                text-transform:uppercase;
+            }
+            a:link, a:visited{
+                a:link{color:red;}
+                a:visited{color:aqua;}
+            }
+            img{
+                max-width:100%;
+                height:auto;
+            }
+            nav{
+                list-style-type:none;
+                margin:0;
+                padding:0;
+
+                a:link,a:visited{
+                    display:block;
+                    font-weight:normal;
+                    color:white;
+                    background-color: grey;
+                    width:250px;
+                    text-align:center;
+                    padding:4px;
+                    text-decoration:underline;
+                    text-transform:capitalize;
+                }
+            }
+            form{
+                display:block;
+                font-weight:normal;
+                color:white;
+                background-color: blueviolet;
+                width:280px;
+                text-align:left;
+                padding:4px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        </style>
+        <title>Why People Should Not Use AI</title>
+    </head>
+    <header>
+        <h3>Artificial Intelligence</h3>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Credit">Credit</a></li>
+            </ul>
+        </nav>
+        <h1>Top 10 Reasons Not to Use AI</h1><br>
+        <p>BY <a href="marsya.com">MARSYA ZAID</a>, 2ND YEAR STUDENT - 11 NOVEMBER 2026s</p><br>
+    </header>
+
+    <body>
+        <img src="AI.jpg">
+        <p>Because media is constantly urging us to use more AI,
+           Professor Ethan Mollick’s recent post that identified 
+           5 Times Not to Use AI caught our attention. After dispensing with the obvious scenarios
+           (e.g., using AI for illegal purposes, in high-stakes situations where errors could be catastrophic, 
+           or for decisions that ethically require human work), Professor Mollick offers five situations where he 
+           would not recommend using AI:</p>
+        <ol>
+            <li><p>Chatgpt</p></li>
+            <li><p>Claude</p></li>
+            <li><p>Gemini AI</p></li>
+        </ol><br>
+
+        <h2>Example of AI taking the world</h2>
+        <video width="400" height="300" controls>
+            <source src="yebbaheartbreak.mp4" type="video/mp4" alt="Yebba's Heartbreak">
+        </video><br>
+
+        <h2>Give us your opinion !</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name :</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name..." autofocus required><br><br>
+
+            <label for="email">Email :</label><br>
+            <input type="text" id="email" name="email" placeholder="youremail@example.com.." autofocus required><br><br>
+
+            <label for="gender">Gender :</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="hobby">Hobby :</label><br>
+            <input type="checkbox" id="hobby1" name="hobby1" value="Basketball">
+            <label for="hobby1">Basketball</label><br>
+            <input type="checkbox" id="hobby2" name="hobby2" value="Badminton">
+            <label for="hobby2">Badminton</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
