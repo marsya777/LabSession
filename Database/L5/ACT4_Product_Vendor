@@ -1,0 +1,38 @@
+CREATE DATABASE Product_Vendor;
+USE Product_Vendor;
+
+-- Q1
+CREATE TABLE prodvendor (
+  prcode    VARCHAR(15),
+  prvendor  VARCHAR(10),
+  prpricing DECIMAL(8,2),
+  PRIMARY KEY (prcode, prvendor)
+);
+
+-- Q2
+INSERT INTO prodvendor (prcode, prvendor, prpricing) VALUES
+('PW-1001',   'P10',  500.00),
+('PQ-4570',   'P88',   35.00),
+('MM-120E',   'P67',  245.00),
+('MM-F12WR',  'P10', 1210.00),
+('PW-QZR-09', 'P10',   79.00),
+('PQ-4570',   'P10',   32.50),
+('MM-120E',   'P88',  242.00),
+('PW-1001',   'P45',  550.00),
+('MM-F12WR',  'P73', 1200.00),
+('PQ-4570',   'P67',   33.00),
+('MM-F12WR',  'P35', 1189.00),
+('PW-1001',   'P23',  510.00),
+('PQ-4570',   'P35',   36.00),
+('MM-120E',   'P23',  250.00);
+
+SELECT * FROM prodvendor;
+
+-- Q3
+SELECT DISTINCT a.prcode, a.prpricing, a.prvendor
+FROM prodvendor a
+JOIN prodvendor b
+  ON a.prcode = b.prcode
+ AND a.prvendor <> b.prvendor
+ORDER BY a.prcode;
+-- PW-QZR-09 is excluded because it has only one vendor.
